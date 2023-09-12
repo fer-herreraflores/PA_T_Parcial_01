@@ -10,5 +10,20 @@ char Ejercicio01::lower(char c)
 
 bool Ejercicio01::isPalindrome(const char* phrase, int length)
 {
-    return false;
+    int Primerletra, Ultimaletra;
+    while(Primerletra!=0&&Ultimaletra!=0)
+    {
+        if (Primerletra >= Ultimaletra)
+        {
+            return true;
+        }
+        if (Primerletra != Ultimaletra)
+        {
+            return false;
+        }
+        return Primerletra + 1, Ultimaletra - 1;
+    }
+    
+    
+    return 0;
 }
